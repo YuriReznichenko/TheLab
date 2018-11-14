@@ -3,12 +3,7 @@
 
 This document is a random collection of notes, thoughts and comments as we start to research the "inside workings" of Apple's Final Cut Pro package.
 
-To get an overview of how Final Cut Pro works, it's worth checking out the original parent as a [PDF with images](http://pimg-fpiw.uspto.gov/fdd/25/750/088/0.pdf) or as [searchable plain text](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=8,875,025.PN.&OS=PN/8,875,025&RS=PN/8,875,025).
-
-Here's one of the screenshots from the patent:
-
-![Patent Screenshot](../../images/patent.png)
-
+It's interesting to note that most of the Frameworks contained within Final Cut Pro X can also be found in Apple Motion, iMovie on iOS, iMovie on macOS and Clips on iOS.
 
 ---
 
@@ -19,16 +14,6 @@ Phil Pan [writes on Alex4D's Facebook Page](https://www.facebook.com/Alex4D/post
 > I worked on that team for five years. There wasn't much work done on merging Shake and FCP. Most of the advanced work done by the core Shake team focused on the Helium renderer, which today is core to Pro Apps today. Shake's genius was how it was ultra-efficient as CPU-only code. Management had little interest in Shake and most resources went to Motion and Aperture; projects that Steve could related to when he wasn't completely absorbed by the iPad, the iPhone and the iTunes business ecosystem. The author of this patent, Christophe Souchard, is a French mathematician who had tons of prior experience at Discreet/Autodesk. He joined Apple when it purchased his Senso technology, which was the first Intel-based library to do advanced image scaling and frame-rate conversion using motion vector estimation. While at Apple, Christophe's skills impressed management enough that his position was labelled "Applied Magic", and a veteran aerospace software engineer was hired to perform curation and clerical code management for his inventions. He introduced the team to methods using partial differential equations and while exteremely slow to compute, his next-generation prototypes performed jaw-dropping feats 15 years before similar tools would be introduced by Adobe. None of this work ever came out because Apple had a policy not to release compute-intensive software. Randy Ubillos (father of FCP and close to Steve) wouldn't accept any operation that took longer than a second per frame to render. This relegated Christophe to a research position for a while, until Randy got so impressed that he monopolized Christophe to work on advanced concepts for FCPX. Randy had some clever ideas about shot alignment and automatic editing, and this patent is the result of one of their collaborative projects. Today Christophe works at Unity Technologies doing advanced AR work, and he consults on the side when he has the time. He's recently rumored to have authored the rendering engine for ColorSynth, a complex colour grading plugin for FCPX and Premiere.
 >
 > Helium was done in Santa Monica by the mad frenchmen team at Apple; Arnaud Hervas, Emmanuel Mogenet and Chrisophe Souchard. Arnaud was the co-founder of Nothing Real, the company that produced Shake. The idea was to do automatic tiled rendering using all available compute resources, so CPU cores and GPU(s). It was a lot trickier than people would think, as math functions would be rounded differently on different resources, and this would affect pixel values. The renderer has to evaluate the render graph to intelligently tile the proper regions-of-interest; i.e. it has to know the size of convolution kernels and all parts of a shader to produce tiles that will later merge properly, and it has to do all of this in real-time. Beautiful work. Emmanuel is now an executive at Google Research in Switzerland. Arnaud is growing tomatoes in Culver City, when he's not working on camera alignement software. Apple could have done a lot more in the high end, but in the last days of Steve, the company shifted its focus on the mass market and mobile devices. It was the right thing to do for all the reasons we know today (the Bottom Line being the most evident), but in so doing it hurt engineering effors in high-end imaging across the world; Adobe was going through a bad patch and the Discreet team at Autodesk was in disarray. The high-end was picked up by The Foundry: Its founder, Bruno Nicoletti (a Discreet alumnus) had the clever idea to acquire Nuke from Digital Domain and he had the skills and industry knowledge to turn it into the work-horse that it's become today. Still, Nuke is a geek's tool and there could have been an opportunity for a more artist-oriented solution in the high-end. This would not be one of Apple's pursuits: After a couple of years of soul-searching it became clear in 2007 that the future of Apple would be the iPhone and that all the Pro Apps stuff was no longer interesting. It survived nonetheless and I'd say that today the spirit of high(ish) end imaging is coming back to Apple. But so is the case at Adobe. In the end, the consumer wins and it's an exciting time to be buying graphics solutions.
-
----
-
-## Handy Tools
-
-Here are some handy "research" tools we use to explore Final Cut Pro:
-
-- [Hopper Disassembler](https://www.hopperapp.com)
-- [NibDecompiler](https://github.com/akahan/Nib-Decompiler)
-- [Asset Catalog Tinkerer](https://github.com/insidegui/AssetCatalogTinkerer)
 
 ---
 
