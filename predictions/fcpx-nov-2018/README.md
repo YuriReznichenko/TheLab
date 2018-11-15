@@ -3,7 +3,7 @@
 
 In the lead up to the [2018 Creative Summit](http://www.fcpxcreativesummit.com) I thought it would be fun to put together a list of predictions of what I think we'll see in the next Final Cut Pro release.
 
-I'm slightly conflicted as to whether we'll see 10.4.3 (and possibly a preview of 10.5?), or whether they'll just release 10.5.
+I'm slightly conflicted as to whether we'll see 10.4.4 (and possibly a preview of 10.5?), or whether they'll just release 10.5.
 
 Based on some [tweaks](https://github.com/CommandPost/CommandPost/commit/2075c8fca3c96c0aa1041808e9c7836776169b58) we needed to make to CommandPost, I know at least some of the pre-release versions of Final Cut Pro had a 10.4.x version, but that could just mean that internal development was done in the 10.4 branch, and when they release they'll bump it to 10.5.
 
