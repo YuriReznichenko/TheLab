@@ -89,3 +89,9 @@ My guess, is that we'll see something similar to what Adobe Premiere already has
 I don't actually own a VR headset, so I haven't actually tried enabling this option with a VR headset connected, so I'm not sure what this would look like.
 
 ![Debug Menu](../../images/debug-360.png)
+
+---
+
+## Captions Improvements
+
+There's various changes in the various iMovie Frameworks to do with improvements to Captions, so I think we'll see some big improvements here.
