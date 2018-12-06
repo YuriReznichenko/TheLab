@@ -97,15 +97,15 @@ People who are concerned that dropping QTKit will have any impact on MXF files, 
 - MXF Export including AVC-Intra
 - Compressor settings for exporting MXF files
 
-However, AFAIK, as of today, Apple doesn't have it's own implementation of the SMPTE VC-3 standard (i.e. DNxHD/HR), so currently when you're importing DNxHD/HR into Final Cut Pro you're actually using Avid's QuickTime codecs (which requires installation of a seperate package - Avid QuickTime Codecs LE), which works on QTKit.
+However, AFAIK, as of today, Apple doesn't have it's own implementation of the SMPTE VC-3 standard (i.e. DNxHD/HR), so currently when you're importing DNxHD/HR into Final Cut Pro you're actually using Avid's QuickTime codecs (which requires installation of a seperate package - [Avid QuickTime Codecs LE](http://avid.force.com/pkb/articles/en_US/download/Avid-QuickTime-Codecs-LE)), which works on QTKit.
 
-As of today, there's currently no way for third parties to write their own AV Foundation codecs, however, third parties can write their own "codec support" for Final Cut Pro (i.e. REDCODE RAW and Canon Cinema RAW Light require additional software to use these codecs within Final Cut Pro).
+As of today, there's currently no way for third parties to write their own AVFoundation codecs, however, third parties can write their own "codec support" for Final Cut Pro (i.e. REDCODE RAW and Canon Cinema RAW Light require additional software to use these codecs within Final Cut Pro).
 
 In regards to DNxHD/HR, there's basically a few options:
 
 1) Apple writes their own SMPTE VC-3 compliant codec that works either via AVFoundation system-wide, or just solely for ProApps (like the XAVC implementation currently is). I reckon this is a possibility, given that SMPTE VC-3 is an open standard.
 2) Avid writes their own set of codecs specifically for Apple's ProApps to access DNxHD/DNxHR. I can't see this happening.
-3) Apple allows third party AV Foundation-based codecs, which allows Avid to write a codec that works system-wide, on both Mac & iOS. Apple's had many years to do this though, and they haven't - so I think the chance of them allowing 3rd party AV Foundation-based codecs is pretty slim.
+3) Apple allows third party AVFoundation-based codecs, which allows Avid to write a codec that works system-wide, on both Mac & iOS. Apple's had many years to do this though, and they haven't - so I think the chance of them allowing 3rd party AVFoundation-based codecs is pretty slim.
 
 However, it's also important to note the wording of Apple's "About legacy media in Final Cut Pro X" article, specifically:
 
