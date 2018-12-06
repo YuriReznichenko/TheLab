@@ -20,6 +20,14 @@ Jon Chappell at Digital Rebellion did an awesome blog post with his [Thoughts on
 
 There's also been lots of discussion on [Reddit](https://old.reddit.com/r/editors/comments/9yl2p7/civil_discussion_ramifications_of_legacy_codecs/), Twitter and Facebook.
 
+Avid has posted their response [here](http://avid.force.com/pkb/articles/en_US/Compatibility/The-future-of-Avid-DNx-on-the-Apple-platform?fbclid=IwAR2AKHZW7kXDrRwQiJiO-pESeRjAY7EA78JG1EeE-CaY8nm3j7jo75JsbHE), specifically:
+
+> Apple has released an article related to the future of codec support with Apple FCP X and identified that DNxHD and DNxHR will not be supported in future releases of that product. DNxHD and DNxHR within the QuickTime wrapper have been traditionally supported by various products on the MacOS platform  either through native integration by various MacOS based applications, or through the plugin mechanism that the QuickTime 7 ™ libraries provided.
+>
+> With the deprecation of the QuickTime 7 libraries, support for these formats is now based on the each media application supporting these codecs natively using 64 bit compliant and performance-tuned libraries available through Avid, or each application vendors own implementation using the SMPTE VC-3  standards specifications that the DNx family of codecs are based on.
+>
+> As such, for customers using Apple Computers and MacOS, this announcement does not affect Pro Tools and Media Composer, any other products that have chosen to implement DNxHD and DNxHR natively in the aforementioned manner, or, DNxHD/HR supported through MXF wrappers.  DNxHD, DNxHR, Pro Tools and Media Composer will continue to be supported and will be compatible with the current and future release of Mac OS. We will continue to improve or introduce new features for DNxHD and DNxHR, proven by recent release of DNxUncompressed option, and will support these new features on various operating systems, including MacOS.
+
 However, I still feel like there's some confusion and misinformation, so I thought I'd offer my thoughts as well...
 
 As of Mojave the [QTKit Framework](https://developer.apple.com/documentation/qtkit) still exists and ships with macOS. It's officially depreciated - but MANY apps still use it, including QuickTime Player X and Final Cut Pro X.
