@@ -101,8 +101,12 @@ In regards to DNxHD/HR, there's basically a few options:
 
 However, it's also important to note the wording of Apple's "About legacy media in Final Cut Pro X" article, specifically:
 
-"video files in the Avid DNxHD/DNxHR format created WITH SOFTWARE"
+> video files in the Avid DNxHD/DNxHR format created **with software**
 
-Note the "WITH SOFTWARE". Keep in mind, that ARRI cameras can record DNxHD/HR as well as ProRes, so it SOUNDS like Apple might already have a solution up their sleeve.
+Note the **with software**. Keep in mind, that ARRI cameras can record DNxHD/HR as well as ProRes, so it SOUNDS like Apple might already have a solution up their sleeve.
 
 So the big question is... will dropping QTKit change anything for your average editor? Nope, I doubt it.
+
+There will be a few cases where editors will be using old stock footage, downloaded as a QuickTime using an old legacy codec, but most people convert these files to ProRes anyway, for a smoother editing experience, and if you're using FCPX, I'd suggest just making "optimised media" of any clips that throw up the legacy dialog.
+
+Hopefully someone like Jon Chappell (or maybe we could even do it in CommandPost?) will make a tool to scan a drive for "legacy media", then you could just drag everything into Compressor to convert.
