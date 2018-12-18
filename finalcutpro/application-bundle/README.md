@@ -29,9 +29,9 @@ Contains `CompressorKit.bundle` - which can also be found in Compressor and Moti
 
 ---
 
-### FCP-DAL
+### DAL
 
-Contains `ACD.plugin` - some kind of CoreMediaIO plugin - not exactly sure what it does.
+Contains `ACD.plugin`, this is the Software A/V Output card you see when connecting a HDMI / DP monitor with proper resolution and frame rate.
 
 The CoreMediaIO Device Abstraction Layer (DAL) is analogous to CoreAudio’s Hardware Abstraction Layer (HAL). Just as the HAL deals with audio streams from audio hardware, the DAL handles video (and muxed) streams from video devices.
 
